@@ -4,6 +4,10 @@
 :root {
   --clr-white: #fff;
   --clr-black: #000;
+  --main-color: #be9c79;
+  --light-color: #666;
+  --border: 0.1rem solid var(--clr-black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 /** ==  General Design ===  */
 * {
@@ -37,4 +41,15 @@ h1 {
 }
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+/** === General Project === */
+.logo {
+  width: 3rem;
+  height: 3rem;
+}
+.logoImg {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
 }
