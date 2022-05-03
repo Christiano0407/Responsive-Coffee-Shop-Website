@@ -79,7 +79,7 @@ header .flex {
   padding: 1.5rem 2rem;
 }
 .navBar {
-  width: 35rem;
+  width: 40rem;
   margin: 0 auto;
 }
 .navBar ul {
@@ -95,6 +95,23 @@ header .flex {
 }
 .navLink:hover {
   font-weight: 600;
+}
+.navLink:hover::after {
+  content: " ";
+  display: flex;
+  width: 100%;
+  outline: 2px solid #be9c79;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+  animation: xMen 0.2s 0.2s ease-in-out forwards;
+}
+@keyframes xMen {
+  0% {
+    transform: scaleX(0%);
+  }
+  100% {
+    transform: scaleX(100%);
+  }
 }
 .navLink:active {
   font-weight: 900;
