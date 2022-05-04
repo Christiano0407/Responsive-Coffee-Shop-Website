@@ -90,7 +90,7 @@ header .flex {
 }
 .navLink {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #be9c79;
 }
 .navLink:hover {
@@ -99,7 +99,7 @@ header .flex {
 .navLink:hover::after {
   content: " ";
   display: flex;
-  width: 100%;
+  width: 0%;
   outline: 2px solid #be9c79;
   border-radius: 1rem;
   margin-top: 0.5rem;
@@ -129,7 +129,7 @@ header .flex {
 .menu-btn {
   font-size: 1.8rem;
   cursor: pointer;
-  outline: 2px solid #be9c79;
+  outline: 4px solid #be9c79;
   border-radius: 10%;
   padding: 1rem;
   display: flex;
@@ -138,4 +138,47 @@ header .flex {
 }
 .menu-btn:active {
   transform: scale(0.9rem);
+}
+
+/** ========  ======= ========= Media Queries =========== =========== ========= */
+@media (max-width: 450px) {
+}
+
+@media (max-width: 768px) {
+  #menuBtn {
+    display: inline-block;
+  }
+  #btnBar {
+    transition: 0.2s linear;
+  }
+  #btnBar.fa-times {
+    transform: rotate(180deg);
+  }
+  .header .flex .navBar {
+    position: absolute;
+    top: 99%;
+    left: 0%;
+    right: 0%;
+    background-color: #fff;
+    border-top: var(--border);
+    border-bottom: var(--border);
+    clip-path: polygon(0 0, 100% 1%, 100% 1%, 0 0);
+    transition: 0.2s linear;
+  }
+  .header .flex .navBar:active {
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
+  }
+  .header .flex .navBar .navList {
+    display: block;
+  }
+  .navList .navLink {
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navLink {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
 }
