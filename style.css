@@ -95,11 +95,13 @@ header .flex {
 }
 .navLink:hover {
   font-weight: 600;
+  color: #be9c79;
+  opacity: 0.5;
 }
-.navLink:hover::after {
+.navLink:hover:after {
   content: " ";
   display: flex;
-  width: 0%;
+  width: 100%;
   outline: 2px solid #be9c79;
   border-radius: 1rem;
   margin-top: 0.5rem;
@@ -150,6 +152,10 @@ header .flex {
   }
   #btnBar {
     transition: 0.2s linear;
+    cursor: pointer;
+  }
+  #btnBar:active {
+    transform: scale(0.9);
   }
   #btnBar.fa-times {
     transform: rotate(180deg);
@@ -165,11 +171,22 @@ header .flex {
     clip-path: polygon(0 0, 100% 1%, 100% 1%, 0 0);
     transition: 0.2s linear;
   }
-  .header .flex .navBar:active {
+  .header .flex .navBar.active {
     clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
   }
   .header .flex .navBar .navList {
-    display: block;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30rem;
+  }
+  .navLink:hover {
+    color: #be9c79;
+    opacity: 0.5;
+  }
+  .navLink::after {
+    display: none;
   }
   .navList .navLink {
     text-transform: uppercase;
