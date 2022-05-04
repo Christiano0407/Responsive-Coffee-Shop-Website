@@ -142,6 +142,26 @@ header .flex {
   transform: scale(0.9rem);
 }
 
+/** == HOME*/
+.home__bg {
+  /*   background-image: url("./src/assets/image/cof8.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      hsl(30deg 35% 61%)
+    ),
+    url(./src/assets/image/cof6.jpg);
+}
+
+.home__bg .home {
+  min-height: 70rem;
+}
+
 /** ========  ======= ========= Media Queries =========== =========== ========= */
 @media (max-width: 450px) {
 }
