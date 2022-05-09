@@ -267,4 +267,7 @@ header .flex {
     border: none;
     margin-top: 10px;
   }
+  .menu-btn {
+    display: none;
+  }
 }
