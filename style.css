@@ -170,6 +170,7 @@ header .flex {
 }
 .btn {
   padding: 1rem;
+  cursor: pointer;
 }
 
 /** ========  ======= ========= Media Queries =========== =========== ========= */
@@ -239,6 +240,43 @@ header .flex {
     border-radius: 5px;
     border: none;
     margin-top: 10px;
+    cursor: pointer;
+  }
+}
+@media (min-width: 769px) {
+  .menu-btn {
+    display: none;
+  }
+  .content {
+    padding: 1rem;
+  }
+  .content-title {
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 0 auto;
+  }
+  .content-text {
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin: 0 auto;
+    font-weight: 500;
+    color: #333;
+  }
+  .content .btn {
+    padding: 2rem;
+    width: 15rem;
+    margin: 2rem auto;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+  }
+  .content .btn:active {
+    transform: scale(0.9);
+  }
+  .content .btn a {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #000;
   }
 }
 
@@ -249,7 +287,7 @@ header .flex {
   }
 
   .content-title {
-    font-size: 50px;
+    font-size: 6rem;
     padding: 10px;
     font-weight: 900;
   }
