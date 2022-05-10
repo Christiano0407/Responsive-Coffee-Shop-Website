@@ -175,12 +175,34 @@ header .flex {
 .btn {
   padding: 1rem;
   cursor: pointer;
+  color: #be9c79;
+}
+.btn:hover {
+  background-color: #000;
+  color: #be9c79;
 }
 
 /** ========  ======= ========= Media Queries =========== =========== ========= */
 @media (max-width: 450px) {
 }
-
+@media (max-width: 600px) {
+  .content {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-title {
+    font-size: 4.5rem;
+  }
+  .content-text {
+    letter-spacing: 0.2rem;
+  }
+  .content .btn {
+    padding: 2rem;
+  }
+}
 @media (max-width: 768px) {
   #menuBtn {
     display: inline-block;
@@ -230,12 +252,14 @@ header .flex {
     font-size: 30px;
     padding: 10px;
     font-weight: 900;
+    text-align: left;
   }
   .content-text {
     font-size: 12px;
     padding: 10px;
     font-weight: 400;
     color: hsl(0deg 0% 20%);
+    text-align: left;
   }
   .btn {
     padding: 10px;
@@ -258,6 +282,7 @@ header .flex {
     font-size: 5rem;
     font-weight: 900;
     margin: 0 auto;
+    text-align: left;
   }
   .content-text {
     font-size: 1.4rem;
