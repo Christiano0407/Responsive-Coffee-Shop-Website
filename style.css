@@ -69,7 +69,7 @@ header {
   z-index: 1000;
 }
 section {
-  padding: 3rem 2rem;
+  /* padding: 3rem 2rem; */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -486,6 +486,9 @@ header .flex {
     grid-template-rows: 1fr;
     grid-auto-flow: row;
   }
+  .box__container .box img {
+    height: 50%;
+  }
   .box__container .box h2 {
     text-align: left;
     padding: 1rem;
@@ -498,6 +501,41 @@ header .flex {
     font-size: 1.2rem;
     color: #333;
     opacity: 0.6;
+  }
+
+  .menu .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .menu .heading img {
+    width: 50%;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+  .menu .heading h2 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .box__menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 1.5rem;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .box__menu .menuPlus {
+  }
+  .menuPlus .menuImg {
+    width: 100%;
+  }
+  .menuPlus .menuTitle {
+    padding: 1rem;
+    text-align: center;
   }
 }
 
