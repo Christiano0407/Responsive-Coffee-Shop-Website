@@ -186,6 +186,18 @@ header .flex {
 .about {
   width: 100%;
   display: grid;
+  margin: 0 auto;
+}
+
+/*? == Felicity == */
+.felicity {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+}
+.heading {
+}
+.box__container {
 }
 
 /** ========  ======= ========= Media Queries =========== =========== ========= */
@@ -297,6 +309,7 @@ header .flex {
     text-align: center;
   }
   .about .content .btn {
+    padding: 2rem;
   }
 }
 @media (min-width: 769px) {
