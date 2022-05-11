@@ -196,8 +196,12 @@ header .flex {
   display: grid;
 }
 .heading {
+  width: 100%;
+  margin: 1rem auto;
 }
 .box__container {
+  width: 100%;
+  margin: 1rem auto;
 }
 
 /** ========  ======= ========= Media Queries =========== =========== ========= */
@@ -424,6 +428,29 @@ header .flex {
   }
   .about .content .content-text {
     text-align: left;
+  }
+  .felicity .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .felicity .heading img {
+    width: 50%;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+  .felicity .heading h2 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  .felicity .box__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
   }
 }
 
