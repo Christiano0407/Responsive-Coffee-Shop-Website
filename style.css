@@ -452,6 +452,19 @@ header .flex {
     grid-template-rows: 1fr;
     grid-auto-flow: row;
   }
+  .box__container .box h2 {
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+  .box__container .box p {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #333;
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: 1024px) {
