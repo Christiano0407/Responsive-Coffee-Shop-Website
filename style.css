@@ -192,7 +192,7 @@ header .flex {
 /*? == Felicity == */
 .felicity {
   width: 100%;
-  margin: 0 auto;
+  margin: 2rem auto;
   display: grid;
 }
 .heading {
@@ -308,10 +308,62 @@ header .flex {
   .about .content .content-title {
     text-align: center;
   }
+  .about .content .content-text {
+    width: 90%;
+    text-align: center;
+    font-weight: 400;
+    color: #000;
+    opacity: 0.6;
+  }
   .about .content .btn {
     padding: 2rem;
   }
+  .felicity .heading {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .heading img {
+    padding: 1rem;
+    margin: 0 auto;
+    width: 75%;
+  }
+  .heading h2 {
+    padding: 1rem;
+    margin: 1rem auto;
+    font-size: 4rem;
+    font-family: var(--font-family-cursive);
+  }
+  .felicity .box__container {
+    flex-direction: column;
+  }
+  .box__container .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem auto;
+  }
+  .box__container .box img {
+    width: 50%;
+  }
+  .box h2 {
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  .box p {
+    padding: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: #333;
+    opacity: 0.6;
+    font-weight: 400;
+  }
 }
+
 @media (min-width: 769px) {
   .menu-btn {
     display: none;
