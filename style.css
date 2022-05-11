@@ -279,6 +279,24 @@ header .flex {
     cursor: pointer;
   }
   .about {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .image {
+    width: 100%;
+  }
+  .about .content {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .about .content .content-title {
+    text-align: center;
+  }
+  .about .content .btn {
   }
 }
 @media (min-width: 769px) {
