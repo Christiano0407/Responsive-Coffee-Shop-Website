@@ -204,6 +204,13 @@ header .flex {
   margin: 1rem auto;
 }
 
+/*? === Menu === */
+.menu {
+  width: 100%;
+  display: grid;
+  margin: 2rem auto;
+}
+
 /** ========  ======= ========= Media Queries =========== =========== ========= */
 @media (max-width: 450px) {
 }
@@ -365,6 +372,33 @@ header .flex {
     color: #333;
     opacity: 0.6;
     font-weight: 400;
+  }
+
+  .menu .heading {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu .box__menu {
+    flex-direction: column;
+  }
+  .menu .menuPlus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem auto;
+  }
+  .menuPlus .menuImg {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .menuPlus .menuTitle {
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
   }
 }
 
