@@ -219,6 +219,11 @@ header .flex {
 }
 
 /*? === Chefs === */
+.chefs {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+}
 
 /** ========  ======= ========= Media Queries =========== =========== ========= */
 @media (max-width: 450px) {
@@ -438,6 +443,22 @@ header .flex {
     margin: 0 auto;
     cursor: pointer;
   }
+  .chefs .heading {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .chefs .heading img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .chefs .heading h2 {
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+  }
 }
 
 @media (min-width: 769px) {
@@ -607,6 +628,45 @@ header .flex {
     width: 100%;
     cursor: pointer;
   }
+
+  .chefs .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .chefs .heading img {
+    width: 25%;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+  .chefs .heading h2 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .chefs .chef__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .chef__container .chefPlus .imgChef {
+    height: 90%;
+    border-radius: 10%;
+    border: none;
+  }
+  .chef__container .chefPlus .titleChef {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -643,5 +703,8 @@ header .flex {
   .navLink {
     font-size: 2rem;
     font-weight: 700;
+  }
+  .chef__container .chefPlus .titleChef {
+    font-size: 2.4rem;
   }
 }
