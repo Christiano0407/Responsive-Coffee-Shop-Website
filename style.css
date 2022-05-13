@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("./src/css/mediaQueries.css");
+
 /** ==  Root  ===  */
 :root {
   --clr-white: #fff;
@@ -12,24 +13,29 @@
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   --font-family-cursive: "Lobster", cursive;
 }
+
 /** ==  General Design ===  */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
 }
+
 ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
 img {
   object-fit: cover;
   width: 100%;
@@ -38,23 +44,29 @@ img {
   background-position: center;
   background-size: cover;
 }
+
 p,
 span {
   letter-spacing: 0.1rem;
 }
+
 h1 {
   font-size: 2.4rem;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
 }
+
 ::-webkit-scrollbar {
   height: 0.5rem;
   width: 1rem;
 }
+
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
 }
@@ -69,11 +81,13 @@ header {
   box-shadow: var(--box-shadow);
   z-index: 1000;
 }
+
 section {
   /* padding: 3rem 2rem; */
   max-width: 1200px;
   margin: 0 auto;
 }
+
 header .flex {
   display: flex;
   align-items: center;
@@ -81,26 +95,31 @@ header .flex {
   position: relative;
   padding: 1.5rem 2rem;
 }
+
 .navBar {
   width: 40rem;
   margin: 0 auto;
 }
+
 .navBar ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   cursor: pointer;
 }
+
 .navLink {
   font-size: 1.6rem;
   font-weight: 600;
   color: #be9c79;
 }
+
 .navLink:hover {
   font-weight: 600;
   color: #be9c79;
   opacity: 0.5;
 }
+
 .navLink:hover:after {
   content: " ";
   display: flex;
@@ -110,27 +129,33 @@ header .flex {
   margin-top: 0.5rem;
   animation: xMen 0.2s 0.2s ease-in-out forwards;
 }
+
 @keyframes xMen {
   0% {
     transform: scaleX(0%);
   }
+
   100% {
     transform: scaleX(100%);
   }
 }
+
 .navLink:active {
   font-weight: 900;
   color: #333;
 }
+
 .logo {
   width: 3.5rem;
   height: 3.5rem;
 }
+
 .logoImg {
   /* width: 2.5rem;
   height: 2.5rem; */
   object-fit: cover;
 }
+
 .menu-btn {
   font-size: 1.8rem;
   cursor: pointer;
@@ -141,19 +166,19 @@ header .flex {
   justify-content: center;
   align-items: center;
 }
+
 .menu-btn:active {
   transform: scale(0.9rem);
 }
 
 /** == HOME*/
 .home__bg {
-  background: linear-gradient(
-      to left,
+  background: linear-gradient(to left,
       rgba(255, 255, 255, 0),
-      hsl(30deg 35% 61%)
-    ),
+      hsl(30deg 35% 61%)),
     url(./src/assets/image/cof10.jpg);
 }
+
 .home__bg {
   background-position: center center;
   background-repeat: no-repeat;
@@ -165,19 +190,23 @@ header .flex {
   width: 70%;
   padding: 10px;
 }
+
 .content-title {
   font-family: var(--font-family-cursive);
 }
+
 .home__bg .home {
   min-height: 70rem;
   display: flex;
   align-items: center;
 }
+
 .btn {
   padding: 1rem;
   cursor: pointer;
   color: #be9c79;
 }
+
 .btn:hover {
   background-color: #000;
   color: #be9c79;
@@ -196,10 +225,12 @@ header .flex {
   margin: 2rem auto;
   display: grid;
 }
+
 .heading {
   width: 100%;
   margin: 1rem auto;
 }
+
 .box__container {
   width: 100%;
   margin: 1rem auto;
@@ -233,26 +264,36 @@ header .flex {
   padding: 0.5rem;
   display: grid;
 }
+
 .formularyPro .form {
   background-color: #be9c79;
   /* outline: 4px solid #333; */
   border-radius: 20px;
 }
+
 .btn-form:active {
   transform: scale(0.9rem);
 }
+
 .btn-form {
   background-color: #000;
   color: #be9c79;
   cursor: pointer;
 }
+
 .btn-form:hover {
   background-color: #fff;
   color: #be9c79;
 }
+
 /*? === ==  Footer  == === */
 footer {
   width: 100%;
   padding: 1rem;
-  margin: 0 auto;
+  margin: 2rem auto;
+  background-color: #be9c79;
+}
+
+.footer__container {
+  padding: 1rem;
 }
