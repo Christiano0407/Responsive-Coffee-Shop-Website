@@ -648,6 +648,7 @@
         grid-auto-flow: row;
         grid-auto-rows: 1fr;
         gap: 1.5rem;
+        margin: 1rem auto;
     }
 
     .footer__container .footer-icon {
@@ -681,9 +682,11 @@
     }
 
     .footer-icon span {
-        font-size: 1.4rem;
+        font-size: 1rem;
         font-weight: 400;
         padding: .5rem;
+        text-align: center;
+        opacity: 0.6;
     }
 
     .line {
