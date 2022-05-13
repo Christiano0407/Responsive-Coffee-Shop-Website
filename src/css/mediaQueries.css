@@ -657,11 +657,20 @@
         align-items: center;
     }
 
-    .footer-icon img {
+    .footer-icon .img-color {
         width: 6rem;
         height: 6rem;
-        padding: 1rem;
-        margin-bottom: 1rem;
+        outline: 2px solid #333;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+    }
+
+    .footer-icon img {
+        width: 5rem;
+        height: 5rem;
         object-fit: cover;
     }
 
