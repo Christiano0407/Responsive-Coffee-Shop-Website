@@ -290,10 +290,13 @@ header .flex {
 footer {
   width: 100%;
   padding: 1rem;
-  margin: 2rem auto;
+  margin: 0 auto;
   background-color: #be9c79;
+  margin-top: 2rem;
 }
 
 .footer__container {
   padding: 1rem;
+  margin: 0 auto;
+  display: grid;
 }
