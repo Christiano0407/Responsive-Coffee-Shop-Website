@@ -666,6 +666,45 @@
         gap: 1.5rem;
         margin: 1rem auto;
     }
+
+    .footer__container--logo {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer--logo {
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer--text {
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    .footer--text p {
+        font-size: 1.2rem;
+        text-align: left;
+        filter: opacity(0.6);
+        color: #fff;
+    }
+
+    .footer__container--bottom {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__container--bottom .footer-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+    }
 }
 
 @media (min-width: 1024px) {
