@@ -214,14 +214,14 @@ header .flex {
 
 /*?  === About === */
 .about {
-  width: 100%;
+  width: 90%;
   display: grid;
   margin: 0 auto;
 }
 
 /*? == Felicity == */
 .felicity {
-  width: 100%;
+  width: 90%;
   margin: 2rem auto;
   display: grid;
 }
@@ -299,4 +299,15 @@ footer {
   padding: 1rem;
   margin: 0 auto;
   display: grid;
+}
+
+#footerBottom h2::after {
+  content: " ";
+  width: 50%;
+  border: 2px solid #333;
+  border-radius: 1rem;
+  background-color: #000;
+  flex-direction: column;
+  display: flex;
+  margin: .5rem auto;
 }
