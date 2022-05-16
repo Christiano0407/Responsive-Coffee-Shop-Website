@@ -2,6 +2,31 @@
 
 Create Responsive Coffee Shop Website with Javascript. Animation Werbsite.
 
+# Palete Color
+
+- White: #fff;
+- black: #000;
+- light-color: #333;
+- main-Color: #be9c79;
+- box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+# Font Size and Font
+
+- font-family-cursive: "Lobster", cursive;
+- [Google-Fonts]("https://fonts.google.com/");
+- [FontAwesome]("https://fontawesome.com/icons?d=gallery");
+
+# Responsieve-Web
+
+-max-width: 320px;
+-max-width: 620px;
+
+- max-width: 768px;
+- min-width: 769px;
+- min-width: 1024px;
+- min-width: 1440px;
+- min-width: 1920px;
+
 # Images Project Final
 
 > All Project Image Responsive Web
