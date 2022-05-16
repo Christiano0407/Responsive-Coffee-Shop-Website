@@ -171,6 +171,12 @@ header .flex {
   transform: scale(0.9rem);
 }
 
+.navUser {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 /** == HOME*/
 .home__bg {
   background: linear-gradient(to left,

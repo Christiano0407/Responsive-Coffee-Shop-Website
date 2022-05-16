@@ -440,9 +440,69 @@
         opacity: 0.7;
         text-align: center;
     }
+
+    .navUser {
+        width: 100px;
+        position: absolute;
+        left: 75%;
+    }
+
+    .navUser .search {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search i {
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    .navUser .user {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .user img {
+        border-radius: 50%;
+    }
 }
 
 @media (min-width: 769px) {
+    .navUser {
+        width: 150px;
+    }
+
+    .navUser .search {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search i {
+        font-size: 1.5rem;
+    }
+
+    .navUser .user {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user img {
+        border-radius: 50%;
+    }
+
     #menuBtn {
         display: none;
     }
@@ -869,6 +929,15 @@
 }
 
 @media (min-width: 1440px) {
+    .navUser .user {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
     #menuBoxID {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
@@ -879,6 +948,18 @@
 
     #chefContainerID {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    #chefContainerID {
+        margin: 2rem auto;
+    }
+
+    #formularyID {
+        margin: 2rem auto;
+    }
+
+    #footerID {
+        margin-top: 6rem;
     }
 
     .footer__container--bottom h2 {
