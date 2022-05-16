@@ -8,13 +8,15 @@ Create Responsive Coffee Shop Website with Javascript. Animation Werbsite.
 
 > Mobile Responsive
 
-![](./src/assets//image/coff1.png);
+![](./src/assets/image/mobile1.png);
 
 > Responsive
-> ![](/src/assets/image/cof6.png);
+
+![](/src/assets/image/cof6.png);
 
 > Responsive
-> ![](./src/assets/image/cof3.png);
+
+![](./src/assets/image/cof3.png);
 
 # MIT License
 
