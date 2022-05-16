@@ -13,8 +13,8 @@ Create Responsive Coffee Shop Website with Javascript. Animation Werbsite.
 # Font Size and Font
 
 - font-family-cursive: "Lobster", cursive;
-- [Google-Fonts]("https://fonts.google.com/");
-- [FontAwesome]("https://fontawesome.com/icons?d=gallery");
+- [Google-Fonts](https://fonts.google.com/);
+- [FontAwesome](https://fontawesome.com/icons?d=gallery);
 
 # Responsieve-Web
 
